@@ -1,0 +1,328 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Principal.master.vb" Inherits="BusquedaDeLlamadas.Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Consulta de llamadas anonimas o consulta de llamadas</title>
+    <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <link rel="icon" type="image/png" href="IMAGEN/icono.ico"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="MENU/fonts.css" rel="stylesheet" />
+
+    <style>
+  .base{
+    width: 100%;
+    height: 40px;
+    background: #3590b8;
+   }  
+
+    .base2 {
+    width: 100%;
+    height: 10px;
+    background: #3590b8;
+    background: linear-gradient(9deg, #3590b8 48%, #3590b8 70%);
+    }
+    .menu_bar {
+    background-color: #515A5A;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+header nav {
+    background: rgb(86,86,86);
+    background: linear-gradient(9deg, rgba(86,86,86,1) 21%, rgba(54,63,63,1) 50%, rgba(86,86,86,1) 84%);
+    z-index: 1000;
+    max-width: 100%;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;            
+}
+
+header nav ul li {
+    flex-grow: 1;    
+    border-right: 1.5px solid #fff;                                     
+    border-left: 1.5px solid #fff;                                     
+}
+
+header nav ul li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+header nav ul li a {
+    color: #fff;
+    display: block;
+    margin-top: 12%;
+    text-align: center;
+    font-size:1.1em;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li:hover .children {
+    display: block;
+    margin-top: 0%;
+    width: 15%;
+}
+
+header nav ul li .children {
+    display: none;
+    background: #515A5A;
+    position: absolute;
+    width: 15%;
+    z-index: 1000;              
+}
+
+header nav ul li .children li {
+    display: block;
+    overflow: hidden;            
+   width: 100%;
+    border-bottom: 3px solid #fff; 
+    
+}
+
+header nav ul li .children li a {
+    display: block;
+    color: #fff;
+}
+
+header nav ul li .children li a:hover{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+  .usuario {
+    text-decoration: none;
+    margin-top: 6.5%;
+    margin-bottom: -2.5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 0.8em !important;
+    font-weight: 500;
+    color: #fff !important;
+    background-color: #3590b8;
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+   }
+  header nav ul li .children {
+    display: none;
+    background: #515A5A;
+    position: absolute;
+    width: 17.5%;
+    z-index: 998;
+    margin-top: 1.5%;
+}
+  .formBox input[type="text"], .formBox input[type="Password"] {
+    box-shadow: none;
+    background-color: rgba(0, 32, 47, 0);
+    border-radius: 0px;
+    width: 94%;
+    transition: all .5s;
+    border-left-style: none;
+    border-left-color: #000;
+    border-right-style: none;
+    border-right-color: #000;
+    border-top-style: none;
+    border-top-color: #000;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+
+    @media screen and (max-width: 1000px) {
+        body {
+            padding-top: 80px;
+            font-family: MiFuentePersonal;
+        }
+
+        header {
+            padding-bottom: 0%;
+        }
+
+        .menu_bar {
+            display: block;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: #515A5A;
+            z-index: 1000;
+        }
+
+            .menu_bar .bt-menu {
+                display: block;
+                padding: 10px;
+                color: #fff;
+                overflow: hidden;
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .menu_bar span {
+                float: right;
+                font-size: 40px;
+            }
+
+        header nav {
+            width: 50%;
+            height: calc(100% - 80px);
+            position: fixed;
+            right: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+                header nav ul li {
+                    display: block;
+                    border-bottom: 1px solid rgba(255,255,255,.5);
+                    border-top: 3px solid #fff;
+                }
+
+                    header nav ul li a {
+                        display: block;
+                        margin-bottom: 1.5%;
+                    }
+
+                    header nav ul li:hover .children {
+                        display: block;
+                        width: 85%;
+                        position: relative;
+                        margin-top: 25px;
+                    }
+
+                    header nav ul li .children {
+                        width: 85%;
+                        position: relative;
+                        margin-top: 25px;
+                        
+                    }
+
+                        header nav ul li .children li a {
+                            margin-left: 40px;
+                        }
+
+           .base {
+               font-family: MiFuentePersonal;
+               visibility: hidden;
+           }
+
+
+        @font-face {
+            font-family: Graphik;
+            src: url("/fonts/GRAPHIK/Graphik-Regular.otf") format("opentype");
+        }
+
+
+        body {
+            font-family: Graphik !important;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: Url("/IMAGEN/Login fondo.jpg.jpg");
+            overflow-x: hidden;
+        }
+    }
+
+</style>
+
+    <script>
+        $(document).ready(main); 
+        var contador = 1;
+ 
+        function main () {
+	        $('.menu_bar').click(function(){
+		        if (contador == 1) {
+			        $('nav').animate({
+				        left: '0'
+			        });
+			        contador = 0;
+		        } else {
+			        contador = 1;
+			        $('nav').animate({
+				        left: '-100%'
+			        });
+		        }
+	        });
+ 
+	        // Mostramos y ocultamos submenus
+	        $('.submenu').click(function(){
+		        $(this).children('.children').slideToggle();
+	        });
+        }
+
+        function Nombre(nombre) {
+           
+            document.getElementById("usuario").innerHTML = nombre;
+        }
+
+        function salir() {
+            //var c<%=Session("IdCelular")%> = '';
+               
+
+            window.location.href = "Login.aspx";
+        }
+
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body style="background-image: url('/IMAGEN/Login fondo.jpg');background-color: #cccccc;background-size: cover;background-position-y:30%">
+     <header>
+        <div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu" ></span>Menú</a>
+            <div class="base2"></div>
+		</div>
+        <nav>
+		    <ul>
+                <li><center><a href="#" style="cursor:none;margin-top:10px; background-size:contain; width:50%;"><img style="width:30%; padding-bottom:5PX;" src="IMAGEN/logoclla.png"  /></a></center></li>
+                <li><center><a href="Frm_Menu.aspx">Menú</a></center></li>                         
+                <li><center><a href="Frm_Subida.aspx">Procesar</a></center></li>
+                <li><center><a href="Frm_Consulta.aspx">Consultar</a></center></li>
+                <li><center><a href="Frm_Administrar.aspx">Administración</a></center></li>
+                
+
+
+                <li> <a class="usuario" id="usuario"  onClick="salir();" style="cursor:pointer;"> </a> <br/> </li>
+
+		    </ul>
+            <div class="base" style="padding-left:2%;">
+                <a style="font-size:1.5em ;color:white;" id="titulomenu"> </a>                      
+                
+            </div>            
+	    </nav>
+    </header>
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

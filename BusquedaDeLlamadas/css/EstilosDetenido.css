@@ -1,0 +1,31 @@
+﻿/*clase para alterar el tamaño del boton de indentificacion en una resolución especifica, 
+    esta vacia ya que en las demas resoluciones lo muestra correctamente  68
+*/
+.btn_identificacion {
+    
+}
+
+
+/*Adaptar el texto del boton en una determinada resolución*/
+@media only screen and (max-width: 1600px) and (min-width: 1200px) {
+    .btn_identificacion {
+        font-size:12px;
+    }
+
+
+}
+
+/*clase para adaptar la imagen de los botones del formulario*/
+.btn_formulario {
+
+}
+
+
+/*Adapta ocultando imagen en una determinada resolución*/
+@media only screen and (max-width: 1650px) and (min-width: 1200px) {
+    .btn_formulario {
+        display: none;
+    }
+}
+
+

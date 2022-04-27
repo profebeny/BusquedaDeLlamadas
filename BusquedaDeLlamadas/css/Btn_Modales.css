@@ -1,0 +1,111 @@
+﻿/*funcion de botones*/
+
+.eliminar, .modificar, .salir, .agregar {
+    background: #7f8c8d;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.95em;
+    margin: 10px;
+    padding: 5px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    box-shadow: 0px 1px 0px #dddddd;
+}
+
+    /*colores para los botones*/
+
+.salir.rojo {
+        background: #c0392b;
+        box-shadow: 0px 0px 0px #dddddd;
+}
+
+    .eliminar.rojo {
+        background: #c0392b;
+        box-shadow: 0px 0px 0px #dddddd;
+    }
+
+    .agregar.azul {
+        background: #3c6382;
+        box-shadow: 0px 0px 0px #dddddd;
+    }
+
+    .modificar.azul {
+        background: #3c6382;
+        box-shadow: 0px 0px 0px #dddddd;
+    }
+.agregar:hover, .modificar:hover {
+        background: #2980b9;
+}
+
+.eliminar:hover, .salir:hover {
+        background: #d63031;
+}
+
+.salir.rojo:disabled, .eliminar.rojo:disabled, .modificar.azul:disabled, .agregar.azul:disabled {
+        background: #C0C0C0C0;
+        box-shadow: 0px 1px 0px #C0C0C0;
+}
+
+    /*tamaños para los botones*/
+    .eliminar.medium, .limpiar.medium, .modificar.medium, .agregar.medium, .salir.medium {
+        width: 200px;
+    }
+
+    .eliminar.large, .modificar.large, .agregar.large, .salir.large {
+        width: 450px;
+    }
+
+    /*efectos de diseño de los botones*/
+
+    .eliminar.radius, .modificar.radius, .agregar.radius, .salir.radius {
+        border-radius: 8px;
+    }
+
+    .eliminar:hover, .modificar:hover, .agregar:hover, .salir:hover {
+        box-shadow: 0px 0px 0px;
+        padding-top: 8px;
+    }
+/* ------------ TEXT BOX - BUSCAR --------------*/
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caja {
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3px solid #a50559;
+    background: #fff url(../../IMAGEN/BOTON_ICONOS_MODALES/lupa.png) no-repeat 9px center;
+    width: 60px;
+    transition: all .5s;
+}
+
+    .caja:hover {
+        width: 180px;
+        background-color: #fff;
+        border-color: #8c10b3;
+        box-shadow: 0 0 5px #6dcff680;
+    }
+
+.buscar {
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: normal;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: 98px;
+    border: 0px;
+    background-image: url(../../IMAGEN/BOTON_ICONOS_MODALES/lupa.png);
+    background-size: 18%;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    cursor: pointer;
+}

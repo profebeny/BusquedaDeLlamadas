@@ -1,0 +1,236 @@
+﻿.formBox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: Graphik;
+    color: #042F41;
+    text-align: center;
+}
+
+.formBox input {
+    margin-bottom: 3px;
+    width: 90%;
+    font-family: Graphik;
+}
+
+    .formBox input[type="radio"] {
+        margin: 30px;
+        width: 4%;
+        color: #040404;
+        -ms-transform: scale(1.2); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+        transform: scale(1.2);
+    }
+
+
+
+
+input[type=radio]:checked ~ .check {
+    border: 5px solid #0DFF92;
+}
+
+    input[type=radio]:checked ~ .check::before {
+        background: #0DFF92;
+    }
+
+input[type=radio]:checked ~ label {
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15pt;
+    box-shadow: 0px 2px #888888;
+    margin-left:10px;
+}
+
+
+
+.formBox input[type="text"],
+.formBox input[type="Password"] {
+    box-shadow: none;
+    background-color: rgba(0, 32, 47, .02);
+    border-radius: 0px;
+    width: 94%;
+    transition: all .5s;
+   
+    border-left-style: none;
+    border-left-color: #000;
+    border-right-style: none;
+    border-right-color: #000;
+    border-top-style: none;
+    border-top-color: #000;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+
+    .formBox input[type="text"]:focus,
+    .formBox input[type="Password"]:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: rgb(4,47,65);
+    }
+
+    .formBox input[type="text"]:disabled,
+    .formBox input[type="Password"]:disabled {
+        border-bottom: 2px solid #1B4062;
+        background-color: #F7FBFF;
+        font-weight: bold;
+    }
+
+
+
+
+.DesabilitarTxt {
+    border-bottom: 2px solid #1B4062;
+    background-color: #F7FBFF;
+    font-weight: bold;
+}
+
+/*.formBox input[type="submit"] {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    outline: none;
+    color: #fff;
+    background: #1B4062;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+    .formBox input[type="submit"]:hover {
+        background: #20BF4E;
+    }*/
+/* ***********btn_aceptar* ***********/
+.btn_aceptar {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #002f41;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+    width: 500px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .btn_aceptar:hover {
+        background-color: #6fb430;
+    }
+
+    .btn_aceptar span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .btn_aceptar span:after {
+            content: '\2714';
+            position: absolute;
+            opacity: 0;
+            top: -5px;
+            right: -40px;
+            transition: 0.5s;
+        }
+
+    .btn_aceptar:hover span {
+        padding-right: 35px;
+    }
+
+        .btn_aceptar:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+/* ***********Fin btn_aceptar* ***********/
+/* **************efecto para que crezcan los image button********* */
+.ImgBtn {
+    display: block !important;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    -ms-transition: -ms-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+    .ImgBtn:hover {
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+/* ***********fin del efecto para que crezcan los image button **********/
+
+.formBox a {
+    color: #262626;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.select {
+    margin-bottom: 3px;
+    width: 96%;
+    border: none;
+    border-bottom: 1px solid #212529;
+    border-right: 2px solid #212529;
+    background-color: rgba(247,251,255,0.6);
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+    .select:focus {
+        border-bottom: 2px solid #1B4062;
+        background-color: #EFF2FB;
+        font-weight: bold;
+    }
+
+    .select:disabled {
+        /*margin-bottom: 30px;*/
+        width: 96%;
+        border: none;
+        border-bottom: 1px solid #212529;
+        border-right: 2px solid #212529;
+        background-color: rgba(247,251,255,0.6);
+    }
+
+
+.elbutton {
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: #FF4833;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .elbutton:hover {
+        background: #6AC11E;
+    }
+
+
+.elbutton2 {
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: #212529;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .elbutton2:hover {
+        background: #6AC11E;
+    }
+
+
+.centrado {
+    text-align: center;
+}

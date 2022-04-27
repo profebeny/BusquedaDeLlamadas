@@ -1,0 +1,67 @@
+﻿.hit-the-floor {
+    color: #212529;
+    text-align: left;
+    margin-left: 1%;
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.relieve {
+    /*/*text-align: center;*/*/
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 30px;
+    background: #202020;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+}
+
+
+.relieve2 {
+    text-align: center;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 30px;
+    background: #000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #fff;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+}
+
+.relieve3 {
+    text-align: center;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 33px;
+    background: #000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #fff;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    padding-bottom:0.5rem;
+
+}
+
+.relieve4 {
+    text-align: left;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 28px;
+    background: #000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #212529;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    padding-bottom: 0.1rem;
+   
+}
+

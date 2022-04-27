@@ -1,0 +1,102 @@
+.modal-headerModal {
+    background: #3590B8 ;
+    color: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+    height: 40px;
+    width: 100%;
+    font-weight: bolder;
+}
+
+/*efecto estilo hondo en el border del mapa*/
+.mapa_hondo {
+    border: white 8px groove;
+}
+
+.modal-dialog {
+    width: 100%;
+    /*background: #00ff21;*/
+    border-radius: 2px 2px 5px 5px;
+    text-align: center;
+    /*border:1px solid green;*/
+}
+
+.modal-footerModal {
+    height: 40px;
+    width: 100%;
+    background: #ffffff;
+    position: center;
+    margin-bottom:2px;
+}
+
+button.closeModal {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 50px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.closeModalhover {
+    color: #00ff21;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*clase para alargar el mapa de la modal*/
+.modal_mapa {
+    max-width: 70% !important;
+    max-height: 90% !important;
+}
+
+
+@media only screen and (max-height: 866px) {
+    .modal_mapa {
+        margin-top:30%;
+        max-width: 120% !important;
+        max-height: 10% !important;
+    }
+}
+
+@media only screen and (max-height: 463px) {
+    .modal_mapa {
+        margin-top: 50%;
+        max-width: 120% !important;
+        max-height: 10% !important;
+    }
+}
+
+@media only screen and (max-height: 3300px) {
+    .textomodaltatuajes {
+        margin-top:1%;
+    }
+}
+
+
+@media only screen and (max-height: 1200px) and (min-height: 993px) {
+    .textomodaltatuajes {
+        font-size: 20px;
+        text-align: center !important;
+    }
+
+    
+}
+
+@media only screen and (max-height: 992px) and (min-height: 279px) {
+    .textomodaltatuajes {
+        font-size: 15px;
+        text-align: center !important;
+    }
+
+    
+}
+
+@media only screen and (max-height: 278px) and (min-height: 20px) {
+    .textomodaltatuajes {
+        font-size: 9px;
+        text-align: center !important;
+    }
+
+    
+}
+

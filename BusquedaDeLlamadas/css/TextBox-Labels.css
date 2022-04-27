@@ -1,0 +1,82 @@
+﻿/*Estilos generales de los labels y text box**/
+
+.section-agrupar {
+    margin-bottom: 1em;
+  
+}
+
+.Etiqueta {
+    font-size: 0.9em;
+    color: #fff;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition: all .3s;
+    padding-left: 2px;
+}
+
+.section-label {
+    font-size: 0.9em;
+    color: #000;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition: all .3s;
+    padding-left: 2px;
+}
+
+
+/*textbox*/
+.section-control {
+    box-shadow: none;
+    background-color: rgba(0, 32, 47, .02);
+    border-radius: 0px;
+    border-color: #000;
+    border-style: none none solid none;
+    width: 50%;
+    transition: all .5s;
+    /*padding: 5px;*/
+}
+
+.section-control2 {
+    border-bottom-color: #FFF !important;
+    color: #fff !important;  
+    font-size: 1.2em ;
+    /*padding: 5px;*/
+}
+
+    .section-control2:disabled {
+        border-bottom-color: #FFF !important;
+        color: #fff !important;
+        background-color: #fff !important;
+        font-size: 1.2em;
+        opacity:0.4;
+        /*padding: 5px;*/
+    }
+
+.section-control::placeholder {
+    /*  color: transparent;*/
+}
+
+.section-control:focus {
+    box-shadow: none;
+    outline: none;
+    /*border-color: #c0392b;*/
+    border-color: rgb(4,47,65);
+}
+
+.section-control2:focus {
+    box-shadow: none;
+    outline: none;
+    /*border-color: #c0392b;*/
+    border-color: rgb(4,47,65);
+}
+
+.section-control + .section-label
+.section-control:not(:placeholder-shown) + .section-label {
+    transform: translate(-2.5em) scale(.5);
+}
+
+.section-agrupar:focus-within {
+    transform: scale(1.05, 1.05);
+}

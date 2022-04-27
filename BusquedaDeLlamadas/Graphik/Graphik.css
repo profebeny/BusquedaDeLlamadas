@@ -1,0 +1,9 @@
+﻿
+@font-face {
+    font-family: Graphik-Medium;
+    src: url(Graphik-Medium.otf)
+}
+
+body,h1,h2,h3,h4,h5,h6,p,a,div,th,tr {
+    font-family: Graphik-Medium!important;
+}
