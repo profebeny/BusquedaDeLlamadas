@@ -222,6 +222,7 @@
     <Content Include="IMAGEN\cllaportada.png" />
     <Content Include="IMAGEN\consultar.PNG" />
     <Content Include="IMAGEN\escudo_blanco.svg" />
+    <Content Include="IMAGEN\fondo.png" />
     <Content Include="IMAGEN\loading.gif" />
     <Content Include="IMAGEN\Login fondo.jpg" />
     <Content Include="IMAGEN\logoclla.png" />

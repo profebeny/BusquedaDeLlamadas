@@ -36,7 +36,7 @@
 </head>
 <body>
     <style type='text/css'>
-             body { background-image: Url("/IMAGEN/Login fondo.jpg") !important; overflow-x:hidden}
+             body { background-image: Url("/IMAGEN/fondo.png") !important; overflow-x:hidden;background-size:cover; background-repeat:no-repeat;}
     </style>
 
     <form id="form1" runat="server">
@@ -80,7 +80,7 @@
                                             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                                 <ContentTemplate>
                                                     
-                                                    <asp:Button ID="Btn_Ingresar" runat="server" Text="Ingresar" class="btn btn-primary btn-user btn-block"   />
+                                                    <asp:Button ID="Btn_Ingresar" runat="server" Text="Ingresar" class="btn btn-primary btn-user btn-block"  style="background:#05052B;border-radius:3em;" />
                                                         
                                                 </ContentTemplate>
                                             </asp:UpdatePanel>
@@ -94,7 +94,7 @@
                                        <%-- <hr/>--%>
                                     </div>
                                 </div>
-                                <div style="background-image:url(IMAGEN/cllaportada.png); background-size:contain; background-repeat:no-repeat " class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                                <div style="background-image:url(IMAGEN/cllaportada.png); background-size:cover; background-repeat:no-repeat " class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                             </div>
                         </div>
                     </div>
@@ -106,11 +106,11 @@
     </form>
 
 
-          <footer id="pie" style="width:101.1%;  margin-bottom:0%; bottom: 0; z-index:1; margin-top:10px; position:fixed; border-top:1px solid green; border-radius:0px;margin-left:-2px; background-color:#092432;">	    
+          <footer id="pie" style="width:101.1%;  margin-bottom:0%; bottom: 0; z-index:1; margin-top:10px; position:fixed; border-top:1px solid green; border-radius:0px;margin-left:-2px; background-color:#161D2E;opacity:0.7; ">	    
              <br />   
              <div style="position:relative">
                     <img class="escudo" src="IMAGEN/escudo_blanco.svg" align="right" width="4%" height="3%" style="padding-top:-1%; padding-right:1%"/>
-		            <img class="escudo2" src="IMAGEN/Logo_hgo_2019.png" align="left" width="4%" height="3%" style="padding-left:10px;" />
+		            <img class="escudo2" src="IMAGEN/escudo_blanco.svg" align="left" width="4%" height="3%" style="padding-left:10px;" />
                    <p style="text-align:center;font-size:8pt; font-weight:402; color:white"> © 2021 Gobierno del Estado de Hidalgo. Derechos Reservados<br/>
                         Secretaría de Seguridad Pública<br />    
                         Centro de Control, Comando, Comunicaciones, Cómputo, Coordinación e Inteligencia<br/>
