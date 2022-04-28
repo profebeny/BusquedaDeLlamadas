@@ -31,8 +31,7 @@
 
         window.onload = function () {
             mensajes();
-            var titulomenu = document.getElementById("titulomenu");
-            titulomenu.innerHTML = "Menu"
+
 
         }
 
@@ -46,13 +45,20 @@
 
           
         }
+
+        function modaltipo() {
+            $('#modalopciones').modal('show');
+        }
+
+
+
+
         </script>
 
     <style>
         #contenedorTexto{
             margin-left: 10px;
             margin-right: 50px;
-
             text-align: justify;
             font-size: medium;
         }
@@ -172,6 +178,29 @@
             color:black; 
             font-size: larger;
         }
+
+        .divboton {
+            background-color:rgb(4,47,65);
+            background: linear-gradient(180deg, rgba(12,66,96,1) 56%,rgba(0,29,49,1) 91%);
+            margin-top:auto;
+            margin-bottom:auto;
+            border-radius:40px;
+            min-width:280px;
+            padding:10%;
+        }
+
+        .divboton:hover {
+           cursor: pointer;
+                
+            filter: brightness(1.10);
+        }
+
+        .btnimagen {
+        }
+            .btnimagen:hover {
+                  transform: scale(1.1);
+            }
+
     </style>
 
  
@@ -185,32 +214,28 @@
         <br />
         <div class="row" style="margin-bottom:55px;">
            <div class="col-6">
-              <asp:UpdatePanel ID="UpdatePanel13" runat="server"><ContentTemplate>
-                <div  id="divepresas" runat="server"  class="row d-flex justify-content-center">
-                    <asp:ImageButton ID="Btn_Procesar" runat="server" ImageUrl="~/IMAGEN/procesar.png" Width=22% Height="42%" style="z-index:10" CssClass="entrada"/>
-                    <div class="modal-body-RNS-s" style="display: flex; justify-content: flex-start; flex-wrap: wrap;" > 
-                        <div style="background-color:rgb(4,47,65);background: linear-gradient(180deg, rgba(12,66,96,1) 56%,rgba(0,29,49,1) 91%);margin-top:auto;margin-bottom:auto;border-radius:30px;padding-left: 70px;padding-right: 30px;margin-left:-50px;padding-top:25px;padding-bottom:25px;min-width:280px;">
-                            <asp:Label ID="Label3" runat="server" Text="Procesar" Font-Bold="True" Font-Size="large" ForeColor="white" ></asp:Label>                        
-                        </div>                            
-                    </div>
-                </div>
-                </ContentTemplate></asp:UpdatePanel>  
                <br />
-               <asp:UpdatePanel ID="UpdatePanel1" runat="server"><ContentTemplate>
-                <div class="row d-flex justify-content-center">
-                    <asp:ImageButton ID="Btn_Consultar" runat="server" ImageUrl="~/IMAGEN/consultar.png" Width=22% Height="42%" style="z-index:10" CssClass="salida"/>
-                    <div class="modal-body-RNS-s" style="display: flex; justify-content: center; flex-wrap: wrap;">
-                    <div style="background-color:rgb(4,47,65);background: linear-gradient(180deg, rgba(12,66,96,1) 56%,rgba(0,29,49,1) 91%);margin-top:auto;margin-bottom:auto;border-radius:30px;padding-left: 70px;padding-right: 30px;margin-left:-50px;padding-top:25px;padding-bottom:25px;min-width:280px;"> 
-                            <asp:Label ID="Label1" runat="server" Text="Consultar" Font-Bold="True" Font-Size="large" ForeColor="White"></asp:Label>                        
-                    </div>
-                </div>
-                </div>
+               <br />
+               <br />
+               <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                   <ContentTemplate>
+                     
+                     <center><asp:ImageButton ID="Btn_Consultar" runat="server" ImageUrl="~/IMAGEN/lupa.png" Width=22% Height="42%" style="z-index:10;background:white;border-radius:50%;" class="btnimagen"/></center>
+                      <br />
+                      <div class="row d-flex justify-content-center">
+                 
+                            <div class="modal-body-RNS-s" style="display: flex; justify-content: center; flex-wrap: wrap;">
+                                <div class="divboton" style="" onclick="modaltipo();"> 
+                                      <center><asp:Label ID="Label1" runat="server" Text="Consultar" Font-Bold="True" Font-Size="large" ForeColor="White"></asp:Label></center>                        
+                                </div>
+                            </div>
+                      </div>
                  </ContentTemplate></asp:UpdatePanel>  
                <br />
             </div>
            <div class="col-6">
                 <br />
-               <div id="contenedorTexto">
+               <div id="contenedorTexto" style="background:white;padding:2%;outline:8px;outline-color:blue;">
                     <div>
                         <h1 class="text-left" id="titulo">¡Bienvenido!</h1>
                         <hr id="linea" />
@@ -221,9 +246,14 @@
                 
            </div>
         </div>                    
-        <br /><br />
-        
-        <style>
+              
+
+
+
+
+    </div>
+
+       <style>
             .imagen {
                   width: 90%;
                   height: auto;
@@ -241,18 +271,49 @@
 
         </style>
 
+    <div class="modal fade bd-example-modal-lg" id="modalopciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 
-        <footer style="width:100%; margin-left:0%; margin-top:19px;position:page">	    
-            <div>
-                <img class="escudo" src="IMAGEN/LOGIN/escudo_blanco.svg" align="right" width="5%" height="4%" style="padding-top:1%; padding-right:1%"/>
-		        <img class="escudo2" src="IMAGEN/LOGIN/Logo_hgo_2019.png" align="left" width="5%" height="4%"style="padding-top:1%; padding-left:5px;" />
-                <p style="text-align:center" >© 2022 Gobierno del Estado de Hidalgo. Derechos Reservados<br/>
-                        Secretaría de Seguridad Pública<br/>
-                        Centro de Control, Comando, Comunicaciones, Cómputo, Coordinación e Inteligencia<br/>
-                        Dirección de Desarrollo de Tecnologías  V 2.1
-                </p>
+            <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+
+                         <div class="modal-headerModal">
+                              <h4 class="modal-title text-center" style="margin-top:10px;" id="exampleModalRecargaa">Seleccione opción</h4>
+                          </div>
+
+                         <div class="modal-body">
+                             <div class="row">
+                                 <div class="col-12 row">
+                                     <div class="col-6">
+                                         <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                                             <ContentTemplate>
+                                                 <asp:ImageButton ID="Btn089" runat="server"  ImageUrl="~/IMAGEN/089.png"/>
+                                             </ContentTemplate>
+                                         </asp:UpdatePanel>
+                                     </div>
+                                     <div class="col-6">
+                                         <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                                             <ContentTemplate>
+                                                 <asp:ImageButton ID="Btn911" runat="server" />
+                                             </ContentTemplate>
+                                         </asp:UpdatePanel>
+                                     </div>
+
+                                 </div>
+                             </div>             
+
+                         </div>
+                         <div class="modal-footer">
+                                               
+                                                                                      
+                         </div>
+                   </div>
             </div>
-         </footer>	
-    </div>
+        </div>
+
+
+
+
+
+    
 
 </asp:Content>

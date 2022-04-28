@@ -7,12 +7,9 @@
         Response.Cache.SetNoStore()
     End Sub
 
-    Private Sub Btn_Procesar_Click(sender As Object, e As ImageClickEventArgs) Handles Btn_Procesar.Click
 
-        Response.Redirect("Frm_Subida.aspx")
-    End Sub
     Private Sub Btn_Consultar_Click(sender As Object, e As ImageClickEventArgs) Handles Btn_Consultar.Click
-        Response.Redirect("Frm_Consulta.aspx")
+        ScriptManager.RegisterStartupScript(Me, Me.Page.GetType, "modaltipo", "modaltipo();", True)
     End Sub
 
 

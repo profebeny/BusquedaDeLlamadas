@@ -217,6 +217,7 @@
     <Content Include="Frm_Consulta.aspx" />
     <Content Include="Frm_Menu.aspx" />
     <Content Include="Graphik\Graphik.css" />
+    <Content Include="IMAGEN\089.png" />
     <Content Include="IMAGEN\avatar.png" />
     <Content Include="IMAGEN\c5i_logo.png" />
     <Content Include="IMAGEN\cllaportada.png" />
@@ -228,11 +229,14 @@
     <Content Include="IMAGEN\logoclla.png" />
     <Content Include="IMAGEN\logoses.svg" />
     <Content Include="IMAGEN\Logo_hgo_2019.png" />
+    <Content Include="IMAGEN\logo_menu.png" />
+    <Content Include="IMAGEN\lupa.png" />
     <Content Include="IMAGEN\MODALMENSAJES\Alerta.png" />
     <Content Include="IMAGEN\MODALMENSAJES\Desconocido.png" />
     <Content Include="IMAGEN\MODALMENSAJES\equipo.png" />
     <Content Include="IMAGEN\MODALMENSAJES\Error.png" />
     <Content Include="IMAGEN\MODALMENSAJES\Exito.png" />
+    <Content Include="IMAGEN\personal.png" />
     <Content Include="IMAGEN\procesar.PNG" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\jquery.min.js" />
