@@ -246,11 +246,6 @@
                 
            </div>
         </div>                    
-              
-
-
-
-
     </div>
 
        <style>
@@ -273,27 +268,27 @@
 
     <div class="modal fade bd-example-modal-lg" id="modalopciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-lg " role="document" >
                   <div class="modal-content">
 
                          <div class="modal-headerModal">
                               <h4 class="modal-title text-center" style="margin-top:10px;" id="exampleModalRecargaa">Seleccione opción</h4>
                           </div>
 
-                         <div class="modal-body">
+                         <div class="modal-body" >
                              <div class="row">
                                  <div class="col-12 row">
-                                     <div class="col-6">
+                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6" >
                                          <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                                              <ContentTemplate>
-                                                 <asp:ImageButton ID="Btn089" runat="server"  ImageUrl="~/IMAGEN/089.png"/>
+                                                 <asp:ImageButton ID="Btn089" runat="server"  ImageUrl="~/IMAGEN/089.png" CssClass="btnimagen" Style="width:70%;" />
                                              </ContentTemplate>
                                          </asp:UpdatePanel>
                                      </div>
-                                     <div class="col-6">
+                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6" >
                                          <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                                              <ContentTemplate>
-                                                 <asp:ImageButton ID="Btn911" runat="server" />
+                                                 <asp:ImageButton ID="Btn911" runat="server" ImageUrl="~/IMAGEN/911.png" CssClass="btnimagen" Style="width:70%;"/>
                                              </ContentTemplate>
                                          </asp:UpdatePanel>
                                      </div>

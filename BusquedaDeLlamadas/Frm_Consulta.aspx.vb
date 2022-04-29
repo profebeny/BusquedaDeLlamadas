@@ -9,7 +9,7 @@ Imports System.Threading.Tasks
 Imports System.IO
 Public Class Frm_Consulta
     Inherits System.Web.UI.Page
-    Public cadena As String = "Data Source=10.18.75.26; Initial Catalog=BD_089_2022; User ID=SistemasPachuca; Password=SistemasPachuc@; Connection Timeout=50"
+    Public cadena As String = "Data Source=10.18.75.26; Initial Catalog=BD_089_Audios_2022; User ID=SistemasPachuca; Password=SistemasPachuc@; Connection Timeout=50"
     Public cadena089 As String = "Data Source=10.18.8.237; Initial Catalog=BD_089_2022; User ID=SistemasPachuca; Password=SistemasPachuca; Connection Timeout=50"
 
 

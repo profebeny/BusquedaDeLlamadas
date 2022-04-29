@@ -12,5 +12,11 @@
         ScriptManager.RegisterStartupScript(Me, Me.Page.GetType, "modaltipo", "modaltipo();", True)
     End Sub
 
+    Protected Sub Btn089_Click(sender As Object, e As ImageClickEventArgs) Handles Btn089.Click
+        Response.Redirect("Frm_Consulta.aspx")
+    End Sub
 
+    Protected Sub Btn911_Click(sender As Object, e As ImageClickEventArgs) Handles Btn911.Click
+        Response.Redirect("Frm-911.aspx")
+    End Sub
 End Class

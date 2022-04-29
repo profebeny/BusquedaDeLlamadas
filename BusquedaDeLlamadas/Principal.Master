@@ -343,7 +343,12 @@ header nav ul li .children li a:hover{
         <nav>
 		    <ul>
                 <li style="background:#161D2E;margin-right:-2%;"><center><a href="Frm_Menu.aspx" style="margin-top:10px; background-size:contain; width:120%;"><img style="width:30%; padding:0;" src="IMAGEN/logo_menu.png"  /></a></center></li>
-                <li class="paralelogramo"><center><a href="Frm_Consulta.aspx">Consulta</a></center></li>
+                <li class="paralelogramo"><center><a href="Frm_Consulta.aspx" >Consulta</a></center>
+                    <ul class="children" style="margin-top: 21px;">
+                        <li><a href="Frm_Consulta.aspx">089</a><br /></li>
+                        <li><a href="Frm_911.aspx">911</a><br /></li>
+                    </ul>
+                </li>
                 <li  class="paralelogramo"><center><a href="Frm_Administrar.aspx">Administrar</a></center></li>
                 <li style="padding-left:2%;" >
                     <a class="usuario"   onClick="salir();" style="cursor:pointer;"> 

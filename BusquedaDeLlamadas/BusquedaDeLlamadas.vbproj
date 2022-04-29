@@ -218,7 +218,9 @@
     <Content Include="Frm_Menu.aspx" />
     <Content Include="Graphik\Graphik.css" />
     <Content Include="IMAGEN\089.png" />
+    <Content Include="IMAGEN\911.png" />
     <Content Include="IMAGEN\avatar.png" />
+    <Content Include="IMAGEN\buscar.png" />
     <Content Include="IMAGEN\c5i_logo.png" />
     <Content Include="IMAGEN\cllaportada.png" />
     <Content Include="IMAGEN\consultar.PNG" />

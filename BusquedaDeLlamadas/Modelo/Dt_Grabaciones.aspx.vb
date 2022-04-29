@@ -24,13 +24,13 @@ Public Class Dt_Grabaciones
         Dim sql As String = Nothing
 
         Try
-            conn = New SqlConnection("Data Source=10.18.75.26; Initial Catalog=BD_089_2022; User ID=SistemasPachuca; Password=SistemasPachuc@")
+            conn = New SqlConnection("Data Source=10.18.75.26; Initial Catalog=BD_089_Audios_2022; User ID=SistemasPachuca; Password=SistemasPachuc@")
             conn.Open()
 
             sql = " SELECT [IdCall] "
             sql = sql + " ,concat(SUBSTRING([StartDateTime],1,10),' ',SUBSTRING([StartDateTime],12,8)) as [StartDateTime] "
             sql = sql + " ,concat(SUBSTRING([EndDateTime],1,10),' ',SUBSTRING([EndDateTime],12,8)) as [EndDateTime]  "
-            sql = sql + " ,SUBSTRING([Duration],1,8) as [Duration],[Extension],[OtherParty]  FROM [Grabaciones].[dbo].[Grabaciones] "
+            sql = sql + " ,SUBSTRING([Duration],1,8) as [Duration],[Extension],[OtherParty]  FROM [BD_089_Audios_2022].[dbo].[Grabaciones] "
             sql = sql + " where CONVERT(date,StartDateTime,103)>='" & fi & "'  "
             sql = sql + " and CONVERT(date,StartDateTime,103)<='" & ff & "' "
             If ext <> "" Then

@@ -173,79 +173,16 @@ Partial Public Class Frm_Consulta
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Btn_Buscar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents Btn_Buscar As Global.System.Web.UI.WebControls.ImageButton
 
     '''<summary>
-    '''Control UpdatePanel1.
+    '''Control UpdatePanel13.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
-
-    '''<summary>
-    '''Control UpdatePanel7.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents UpdatePanel7 As Global.System.Web.UI.UpdatePanel
-
-    '''<summary>
-    '''Control Lbl_llamada.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Lbl_llamada As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control Lbl_fechag.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Lbl_fechag As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control Lbl_termino.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Lbl_termino As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control Lbl_duracion.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Lbl_duracion As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control Lbl_extension.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Lbl_extension As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control Lbl_Recepcion.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Lbl_Recepcion As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents UpdatePanel13 As Global.System.Web.UI.UpdatePanel
 
     '''<summary>
     '''Control Lbl_folio.
@@ -329,24 +266,6 @@ Partial Public Class Frm_Consulta
     Protected WithEvents lbl_ticket_web As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control chat.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents chat As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
-    '''Control UpdatePanel12.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents UpdatePanel12 As Global.System.Web.UI.UpdatePanel
-
-    '''<summary>
     '''Control lbl_Notas.
     '''</summary>
     '''<remarks>
@@ -354,6 +273,87 @@ Partial Public Class Frm_Consulta
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lbl_Notas As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control UpdatePanel1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
+
+    '''<summary>
+    '''Control UpdatePanel7.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents UpdatePanel7 As Global.System.Web.UI.UpdatePanel
+
+    '''<summary>
+    '''Control Lbl_llamada.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl_llamada As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control Lbl_fechag.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl_fechag As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control Lbl_termino.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl_termino As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control Lbl_duracion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl_duracion As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control Lbl_extension.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl_extension As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control Lbl_Recepcion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl_Recepcion As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control chat.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents chat As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''Control UpdatePanel8.
