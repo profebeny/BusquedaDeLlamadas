@@ -115,6 +115,13 @@
             x.style.display = "hide";
         }
 
+
+        function Nombre(nombre) {
+
+            document.getElementById("usuario").innerHTML = nombre;
+        }
+
+
     </script>
     <style>
         .pie_pagina {
@@ -351,11 +358,15 @@
           color: #999;
         }
 
-                .btnimagen {
+        .btnimagen {
+            width:50%;
         }
             .btnimagen:hover {
                   transform: scale(1.1);
             }
+
+
+
 
     </style>
 </asp:Content>
@@ -365,7 +376,7 @@
     <div class="row" style="margin:20px;">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row">
              <!--División Izquierda -->
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                       <!--Alertamientos -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                           <div class="panel panel-default">
@@ -390,7 +401,7 @@
 
                                 <div class="col-12 row" id="divfechas" >
                                     <div class="col-12" style="padding:1%;">
-                                        <center><p style="">Seleccione el rango de fechas para consultar las llamadas registrados</p></center>
+                                        <center><p style="font-size:1em;">Seleccione el rango de fechas para consultar las llamadas registrados</p></center>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center">
                                         <asp:UpdatePanel ID="UpdatePanel9" runat="server">
@@ -449,10 +460,11 @@
                             </div>
                           </div> 
                     </div>
-
+                <br />
             </div>
+        
       
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading header_panel_ses">
@@ -493,29 +505,33 @@
                             </div>
                         </div>
                         <div class="panel-body body_panel_ses">
-                            <asp:UpdatePanel ID="UpdatePanel13" runat="server">
-                                <ContentTemplate>
-                                       <asp:Label ID="Lbl_folio" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="Lbl_oficio" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="Lbl_calle" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="Lbl_descolonia" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="Lbl_puntoreferencia" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="Lbl_municipio" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="Lbl_incidente" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="lbl_folio_web" runat="server" Text=""></asp:Label><br />
-                                       <asp:Label ID="lbl_ticket_web" runat="server" Text=""></asp:Label><br />
-                                       <br />
-                                       <center><asp:Label ID="lbl_Notas" runat="server" Text=""></asp:Label></center>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="overflow-y:scroll;max-height:200px;padding:1%;">
+                                <asp:UpdatePanel ID="UpdatePanel13" runat="server">
+                                    <ContentTemplate>
+                                           <asp:Label ID="Lbl_folio" runat="server" Text=""></asp:Label><br />
+                                           <asp:Label ID="Lbl_oficio" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                           <asp:Label ID="Lbl_calle" runat="server" Text="" Font-Size="Small" ></asp:Label><br />
+                                           <asp:Label ID="Lbl_descolonia" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                           <asp:Label ID="Lbl_puntoreferencia" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                           <asp:Label ID="Lbl_municipio" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                           <asp:Label ID="Lbl_incidente" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                           <asp:Label ID="lbl_folio_web" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                           <asp:Label ID="lbl_ticket_web" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                           <br />
+                                           <center><asp:Label ID="lbl_Notas" runat="server" Text="" Font-Size="Small"></asp:Label></center>
 
-                                </ContentTemplate>
-                            </asp:UpdatePanel>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+                <br />
             </div>
 
             <!--División derecha -->
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                     <!--DATOS GENERALES -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                           <div class="panel panel-default">
@@ -533,25 +549,25 @@
                             <ContentTemplate>
                                  <!--DATOS GENERALES IZQUIERDA -->
 
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="overflow-y:scroll;max-height:600px;">
                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
                                            <br />
                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                <asp:UpdatePanel ID="UpdatePanel7" runat="server">
                                                    <ContentTemplate>
                                                        <center><asp:Label ID="Lbl_llamada" runat="server" Text=""></asp:Label></center>
-                                                       <br />
-                                                       <asp:Label ID="Lbl_fechag" runat="server" Text=""></asp:Label><br />
-                                                       <asp:Label ID="Lbl_termino" runat="server" Text=""></asp:Label><br />
-                                                       <asp:Label ID="Lbl_duracion" runat="server" Text=""></asp:Label><br />
-                                                       <asp:Label ID="Lbl_extension" runat="server" Text=""></asp:Label><br />
-                                                       <asp:Label ID="Lbl_Recepcion" runat="server" Text=""></asp:Label><br />
+                                                     
+                                                       <asp:Label ID="Lbl_fechag" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                                       <asp:Label ID="Lbl_termino" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                                       <asp:Label ID="Lbl_duracion" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                                       <asp:Label ID="Lbl_extension" runat="server" Text="" Font-Size="Small"></asp:Label><br />
+                                                       <asp:Label ID="Lbl_Recepcion" runat="server" Text="" Font-Size="Small"></asp:Label><br />
 
                                                    </ContentTemplate>
                                                </asp:UpdatePanel>
                                            </div>
-                                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="overflow-y:scroll;background-color:white; max-height:500px;">
-                                                <div id="chat" runat="server"></div>
+                                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="overflow-y:scroll;background-color:white; max-height:400px;">
+                                                <div id="chat" runat="server" ></div>
                                            </div>
                                            <br />
                                         </div>
@@ -670,6 +686,7 @@
                 <asp:Button ID="Btn_llamada" runat="server" Text="Button" />
                 <asp:TextBox ID="Txt_fechaaudio" runat="server"></asp:TextBox>
                  <asp:TextBox ID="txt_auxduracion" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_auxnombre" runat="server"></asp:TextBox>
             </ContentTemplate>
         </asp:UpdatePanel>
     </div>

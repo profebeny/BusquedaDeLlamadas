@@ -285,7 +285,9 @@ header nav ul li .children li a:hover{
             overflow-x: hidden;
         }
 
-
+        #inferior {
+                display:none;
+        }
     }
 
 </style>

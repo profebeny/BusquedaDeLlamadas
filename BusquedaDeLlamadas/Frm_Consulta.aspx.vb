@@ -24,6 +24,9 @@ Public Class Frm_Consulta
             txt_auxSubarea.Text = Session("Subarea")
             txt_auxtoken.Text = ""
             recetea_chk()
+            txt_auxnombre.Text = Session("Nombre")
+            ScriptManager.RegisterStartupScript(Me, Me.Page.GetType, "Nombre", "Nombre('" & txt_auxnombre.Text & "')", True)
+
         End If
     End Sub
 
@@ -192,13 +195,13 @@ Public Class Frm_Consulta
             codigo = codigo & ""
             If row("SpeakerNumber") = "0" Then
                 codigo = codigo & "<div class='containerchat'>"
-                codigo = codigo & "<img src='IMAGEN/avatar.png' alt='Avatar' style='width100%;'>"
+                codigo = codigo & "<img src='IMAGEN/avatar.png' alt='Avatar' style='width:80%;'>"
                 codigo = codigo & "  <p>" & row("texto") & "</p>"
                 codigo = codigo & " <span class='time-right'>" & "C5i - " & receptor & "</span>"
                 codigo = codigo & " </div>"
             Else
                 codigo = codigo & "<div class='containerchat darker'>"
-                codigo = codigo & "<img src='IMAGEN/avatar.png' alt='Avatar' class='right' style='width100%;'>"
+                codigo = codigo & "<img src='IMAGEN/avatar.png' alt='Avatar' class='right' style='width:80%;'>"
                 codigo = codigo & "  <p>" & row("texto") & "</p>"
                 codigo = codigo & " <span class='time-left'>" & "Llamante: " & emisor & "</span>"
                 codigo = codigo & " </div>"
@@ -292,6 +295,42 @@ Public Class Frm_Consulta
 
             txt_auxaudio.Text = texto.Substring(FirstCharacter)
             Lbl_Status.Text = "Audio Cargado."
+
+            Dim fecha As String = Mid(Txt_fechaaudio.Text, 1, 10)
+            Dim hora As String = Mid(Txt_fechaaudio.Text, 12, 5)
+
+            If CInt(Obten_datosbase089(fecha, hora)) = 0 Then
+                lbl_Notas.Text = "Sin registro"
+                lbl_folio_web.Text = "Sin registro"
+                Lbl_incidente.Text = "Sin registro"
+                Lbl_municipio.Text = "Sin registro"
+                Lbl_puntoreferencia.Text = "Sin registro"
+                Lbl_descolonia.Text = "Sin registro"
+                Lbl_calle.Text = "Sin registro"
+                Lbl_oficio.Text = "Sin registro"
+                Lbl_folio.Text = "Sin registro"
+                lbl_ticket_web.Text = "Sin registro"
+            Else
+                Dim dttime As DateTime = Convert.ToDateTime(txt_auxduracion.Text)
+                Dim horaduracion As String = dttime.ToString("HH:mm:ss")
+
+
+                If horaduracion >= "00:00:20" Then
+                    Trae_datosbase089(fecha, hora)
+                Else
+                    lbl_Notas.Text = "Sin registro"
+                    lbl_folio_web.Text = "Sin registro"
+                    Lbl_incidente.Text = "Sin registro"
+                    Lbl_municipio.Text = "Sin registro"
+                    Lbl_puntoreferencia.Text = "Sin registro"
+                    Lbl_descolonia.Text = "Sin registro"
+                    Lbl_calle.Text = "Sin registro"
+                    Lbl_oficio.Text = "Sin registro"
+                    Lbl_folio.Text = "Sin registro"
+                    lbl_ticket_web.Text = "Sin registro"
+                End If
+            End If
+
 
         End If
 
